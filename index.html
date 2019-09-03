@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <title>Gif not Jif! </title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="header" class="container-fluid">
+            <div id="row0" class="row">
+                <div class="col col-md-3 col-12 col-sm-12 col-lg-4 col-xl-4 headerPic"></div>
+                <div id="header-text" class="col col-md-6 col-12 col-sm-12 col-lg-4 col-xl-4">IT'S GIPHY TIME!</div>
+                <div class="col col-md-3 col-12 col-sm-12 col-lg-4 col-xl-4 headerPic"></div>
+            </div>
+        </div>
+        <div id="below-header" class="container-fluid col-md-10 offset-md-1">
+            <div id="row1" class="row">
+                <div id="button-section" class="container-fluid col-md-12"></div>
+            </div>
+            <br>
+            <br>
+            <div id="row2" class="row">    
+                <div id="giphy-section"  class="col col-md-9"></div>
+                <div id="input-sction"   class="col col-md-3">
+                        <form id="search-form">
+                            <label for="search-input">Enter a GIPHY theme:</label>
+                            <input type="text" id="search-input"><br>
+                            <input id="find-giphy" type="submit" value="Submit">
+                        </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/javascript/script.js"></script>
+        <script>
+            renderButtons();
+            // $('.topic-button').on('click', displayGifs);
+            $("#find-giphy").on('click', addNewButton);
+            $(document).on("click",".topic-button", displayGifs);
+            $(document).on("click", ".gif", animate);
+        </script>
+
+    </body>
+
+</html>
