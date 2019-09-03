@@ -1,0 +1,45 @@
+
+#header-text{
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: white;
+}
+
+.runningman{
+    width:100%;
+    height: auto;
+    text-align: center;
+    margin:auto;
+}
+
+.headerPic{
+    text-align: center;
+    background-color: white;
+}
+
+#header{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+body{
+    background-image: url('../images/nyan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-primary-spacing{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.giphyDiv{
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
